@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELESA 2K25 Registration</title>
-  <style> 
+  <title>VOLTZFEST 2K25 Registration</title>
+  <style>
+    /* General body styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      position: relative;
-      background: url('bg.jpg') no-repeat center center fixed;
-      background-size: cover;
-      background-attachment: fixed; /* Ensures background stays fixed while scrolling */
+      background: url('bg.jpg') no-repeat center center fixed; /* Ensure correct path */
+      background-size: cover; /* Cover entire screen */
       color: white;
       text-align: center;
-      height: auto; /* Allows scrolling if content exceeds viewport */
+      min-height: 100vh; /* Ensure body covers full viewport */
+      position: relative; /* Required for ::before pseudo-element */
     }
 
-    /* Adding an overlay with opacity */
+    /* Adding a semi-transparent overlay */
     body::before {
       content: "";
       position: absolute;
@@ -26,12 +26,12 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.80); /* Black overlay with 80% opacity */
-      z-index: -1;
+      background: rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
+      z-index: -1; /* Places overlay behind content */
     }
 
+    /* Header styling */
     header {
-      background-color: ;
       padding: 20px;
     }
 
@@ -39,6 +39,7 @@
       margin: 10px 0;
     }
 
+    /* Container styling */
     .container {
       display: flex;
       flex-direction: column;
@@ -46,32 +47,20 @@
       margin: 20px auto;
     }
 
-    /* Styling for the section titles */
+    /* Section title styling */
     .section-title {
       font-size: 1.5em;
       margin: 20px 0;
       padding: 10px;
       border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
       color: white;
     }
 
-    /* College level section font */
-    .college-level {
-      background-color: ;
-      color: #fff;
-      font-family: 'Roboto', sans-serif; /* Font for the college level section */
-    }
-
-    /* School level section font */
-    .school-level {
-      background-color: ;
-      color: #fff;
-      font-family: 'Roboto', sans-serif; /* Font for the school level section */
-    }
-
+    /* Event box styling */
     .event-box {
-      background-color: #333;
-      border: 1px solid #444;
+      background-color: rgba(51, 51, 51, 0.8); /* Dark semi-transparent background */
+      border: 1px solid rgba(68, 68, 68, 0.8);
       border-radius: 10px;
       width: 90%;
       max-width: 400px;
@@ -86,7 +75,7 @@
     }
 
     .event-box:hover {
-      background-color: #444;
+      background-color: rgba(68, 68, 68, 1); /* Slightly brighter hover effect */
       cursor: pointer;
       transform: scale(1.05);
     }
@@ -97,25 +86,21 @@
       border-radius: 5px;
     }
 
+    /* Footer styling */
     footer {
-      background-color: #;
       padding: 10px;
       margin-top: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
-    /* Mobile Adjustments */
+    /* Mobile adjustments */
     @media (max-width: 768px) {
       header h1 {
         font-size: 1.5em;
       }
 
       .event-box {
-        width: 80%; /* Ensures icons stay in place */
-      }
-
-      .event-box img {
-        width: 45px;
-        height: 45px;
+        width: 80%; /* Ensures better display on smaller screens */
       }
 
       .section-title {
@@ -123,7 +108,7 @@
       }
     }
 
-    /* Laptop Adjustments */
+    /* Laptop adjustments */
     @media (max-width: 1024px) {
       header h1 {
         font-size: 2em;
@@ -137,28 +122,19 @@
       .event-box {
         width: 70%; /* Adjust box width on laptop */
       }
-
-      .event-box img {
-        width: 45px;
-        height: 45px;
-      }
-
-      .section-title {
-        font-size: 1.4em;
-      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="VOLTZFEST.png" alt="ELESA 2K25 Logo" style="width: 400px; height: auto;">
+    <img src="VOLTZFEST.png" alt="VOLTZFEST 2K25 Logo" style="width: 400px; height: auto;">
     <h1>VOLTZFEST 2K25</h1>
     <p>Welcome to VOLTZFEST 2K25, Register below 👇</p>
   </header>
 
   <div class="container">
     <!-- College Level Section -->
-    <div class="section-title college-level">College Level Events</div>
+    <div class="section-title">College Level Events</div>
     <a href="https://forms.gle/Ti2anUmmd7g912Km9" target="_blank" class="event-box">
       <img src="event1.png" alt="TechRumble">
       <span>TechRumble Registration</span>
@@ -191,7 +167,6 @@
       <img src="event8.jpg" alt="Sketch Showdown - CAD">
       <span>Sketch Showdown - CAD Registration</span>
     </a>
-
     <!-- New BGMI and Free Fire Registration -->
     <a href="https://forms.gle/K9AtmrvzTSKk6uEa9" target="_blank" class="event-box">
       <img src="event9.png" alt="BGMI">
@@ -203,7 +178,7 @@
     </a>
 
     <!-- School Level Section -->
-    <div class="section-title school-level">School Level Events</div>
+    <div class="section-title">School Level Events</div>
     <a href="https://forms.gle/WTGLZP2vHyFMuEsx9" target="_blank" class="event-box">
       <img src="event11.png" alt="Quiz Competition">
       <span>Quiz Competition Registration</span>
@@ -215,7 +190,7 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 ELESA 2K25. All rights reserved.</p>
+    <p>&copy; 2025 VOLTZFEST 2K25. All rights reserved.</p>
   </footer>
 </body>
 </html>
