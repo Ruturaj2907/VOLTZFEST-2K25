@@ -12,8 +12,10 @@
       position: relative;
       background: url('bg.jpg') no-repeat center center fixed;
       background-size: cover;
+      background-attachment: fixed; /* Ensures background stays fixed while scrolling */
       color: white;
       text-align: center;
+      height: auto; /* Allows scrolling if content exceeds viewport */
     }
 
     /* Adding an overlay with opacity */
@@ -108,14 +110,12 @@
       }
 
       .event-box {
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
+        width: 80%; /* Ensures icons stay in place */
       }
 
       .event-box img {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
       }
 
       .section-title {
@@ -135,7 +135,7 @@
       }
 
       .event-box {
-        width: 70%;
+        width: 70%; /* Adjust box width on laptop */
       }
 
       .event-box img {
